@@ -1,0 +1,45 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" // Add this line for Firebase
+}
+
+android {
+    namespace = "com.nmims.signup" // Change this to your package name if not already updated
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.nmims.signup" // Make sure this matches your Firebase project setup
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+// Firebase dependencies
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.0.0') // Latest Firebase BOM
+    implementation 'com.google.firebase:firebase-auth'                // Firebase Authentication
+}

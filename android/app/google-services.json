@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454483960495",
+    "project_id": "sign-up-f1148",
+    "storage_bucket": "sign-up-f1148.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454483960495:android:bb47afdc6368a37efd6a5a",
+        "android_client_info": {
+          "package_name": "com.nmims.signup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpsG0CCVf0ke94H-R-L7pSmFom3r8Pmew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
